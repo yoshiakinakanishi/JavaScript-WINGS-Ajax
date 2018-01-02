@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+</body>
+    <script>
+		
+		// JSONデータをオブジェクトに変換して、プロパティと値を順に表示する
+		// JSONデータを変数jsonStrに代入
+		var jsonStr = '{ "name": "山田孝之", "age": "29", "sex": "male" }';
+		
+		// JSONの文字列をオブジェクトに変化して返す構文
+		var obj = JSON.parse(jsonStr);
+		
+		/*
+		for ( 変数 in オブジェクト ) {
+			処理
+		}
+		for ~ in文 => ループするたびに、オブジェクトのjsonStr(もしくはobj)のプロパティが変数に格納される
+		アクセスするには、オブジェクト[変数] で、オブジェクト.変数ではNG!!
+		*/
+		
+		for(prop in obj) {
+			console.log(prop + " : " + obj[prop]);
+			/*
+			name : 山田孝之
+			age : 29
+			sex : male
+			*/
+			
+			/*
+		
+			下記のような値が出力される
+		
+			p => name, age, sex
+			obj[p] => 山田孝之, 29, male
+			
+			*/
+		}
+		
+	</script>
+</html>
