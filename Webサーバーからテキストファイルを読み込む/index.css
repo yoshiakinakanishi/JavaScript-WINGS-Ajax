@@ -1,5 +1,5 @@
-h1 {
-    color: gold;
-    background-color: darkcyan;
+#myArea {
+	background-color: darkcyan;
+	color: gold;
+	padding-left: 1em;
 }
-

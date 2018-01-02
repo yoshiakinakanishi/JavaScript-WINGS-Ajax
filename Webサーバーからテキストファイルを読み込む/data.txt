@@ -1,3 +1,5 @@
 生のJavaScriptでAjax通信
 </br>
-<strong>Ajax</strong>のテストをやってみよう！
+XMLHttpRequestオブジェクトで
+<br>
+非同期通信のテストをやってみよう！
